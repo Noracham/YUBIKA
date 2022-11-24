@@ -40,7 +40,7 @@ header ul a {
 .main {
   color: #fff;
   width: 100vw;
-  height: 110vh;
+  height: 120vh;
   background-image: url(../img/main_truck.jpg);
   background-size: cover;
   background-repeat: no-repeat;
@@ -51,8 +51,8 @@ header ul a {
   top: 30%;
 }
 .main h1 {
-  font-size: 45px;
-  font-weight: 500;
+  font-size: 43px;
+  font-weight: 550;
   line-height: 70px;
 }
 .main p {
@@ -64,12 +64,110 @@ header ul a {
 }
 
 .inner {
-  position: relative;
-  width: 30%;
-  height: 20%;
-  background-color: #000;
-  -webkit-clip-path: polygon(0% 100%, 17.5% 0%, 100% 0%, 100% 100%);
-          clip-path: polygon(0% 100%, 17.5% 0%, 100% 0%, 100% 100%);
+  position: absolute;
+  right: 0;
+  top: -30vh;
+  width: 50%;
+  height: 300px;
+  background-color: rgba(255, 0, 0, 0.651);
+  -webkit-clip-path: polygon(0% 100%, 60% 0%, 100% 0%, 100% 100%);
+          clip-path: polygon(0% 100%, 60% 0%, 100% 0%, 100% 100%);
+}
+.inner .inner_txt {
+  position: absolute;
   top: 0;
-  z-index: 999;
+  right: 7%;
+  color: rgb(255, 5, 5);
+}
+.inner .inner_txt li {
+  font-family: "Paralucent Text";
+  font-weight: 100;
+  font-size: 20px;
+}
+.inner .inner_txt li:not(:first-child) {
+  margin: 30px auto;
+}
+
+.points {
+  height: 10000px;
+  position: relative;
+  background-color: #000;
+}
+.points .points_main {
+  width: 100%;
+  z-index: 999999;
+  position: absolute;
+  top: 30vh;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.points .points_main h1 {
+  font-size: 45px;
+  position: relative;
+  text-align: center;
+}
+.points .points_main h1::before {
+  position: absolute;
+  content: "POINTS";
+  font-family: "Paralucent Text";
+  font-style: bold;
+  font-size: 70px;
+  opacity: 0.4;
+  top: -50px;
+}
+
+.one_point {
+  margin-top: 15%;
+  display: flex;
+  width: 80%;
+}
+.one_point:first-of-type::before {
+  content: "POINT1";
+  position: absolute;
+  font-family: "Paralucent Text";
+  font-weight: bold;
+  font-size: 70px;
+  opacity: 0.4;
+  top: 15.5%;
+  left: 12%;
+}
+.one_point:nth-of-type(2)::before {
+  content: "POINT2";
+  position: absolute;
+  font-family: "Paralucent Text";
+  font-weight: bold;
+  font-size: 70px;
+  opacity: 0.4;
+  bottom: 47.7%;
+  right: 12%;
+}
+.one_point:nth-of-type(3)::before {
+  content: "POINT3";
+  position: absolute;
+  font-family: "Paralucent Text";
+  font-weight: bold;
+  font-size: 70px;
+  opacity: 0.4;
+  bottom: 17%;
+  left: 12%;
+}
+.one_point .point_img {
+  width: 45%;
+  padding: 0 3%;
+}
+.one_point .point_img img {
+  width: 100%;
+}
+.one_point .one_point_txt {
+  width: 50%;
+  font-size: 15px;
+  line-height: 25px;
+}
+.one_point .one_point_txt h2 {
+  color: rgb(255, 207, 158);
+  margin-top: 0;
+  font-size: 25px;
 }/*# sourceMappingURL=style.css.map */
