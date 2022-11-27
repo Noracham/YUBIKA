@@ -1,6 +1,7 @@
 html {
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
 }
 
 body {
@@ -74,9 +75,19 @@ header ul a {
   top: -15vh;
   width: 50%;
   height: 300px;
-  background-color: rgba(0, 0, 0, 0.651);
+  background-color: rgb(0, 0, 0);
   -webkit-clip-path: polygon(0% 100%, 60% 0%, 100% 0%, 100% 100%);
           clip-path: polygon(0% 100%, 60% 0%, 100% 0%, 100% 100%);
+}
+@media screen and (max-width: 768px) {
+  .inner {
+    width: 73%;
+  }
+}
+@media screen and (max-width: 450px) {
+  .inner {
+    width: 100%;
+  }
 }
 .inner .inner_txt {
   position: absolute;
@@ -85,6 +96,21 @@ header ul a {
   color: rgb(255, 255, 255);
   padding: 0;
 }
+@media screen and (max-width: 1024px) {
+  .inner .inner_txt {
+    right: -2%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .inner .inner_txt {
+    right: -7%;
+  }
+}
+@media screen and (max-width: 450px) {
+  .inner .inner_txt {
+    right: -12%;
+  }
+}
 .inner .inner_txt li {
   display: flex;
   align-items: center;
@@ -92,6 +118,16 @@ header ul a {
   font-family: "Paralucent Text";
   font-weight: 100;
   font-size: 20px;
+}
+@media screen and (max-width: 1024px) {
+  .inner .inner_txt li {
+    font-size: 17px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .inner .inner_txt li {
+    font-size: 13px;
+  }
 }
 .inner .inner_txt li:not(:first-child) {
   margin: 30px auto;
@@ -103,6 +139,16 @@ header ul a {
 .inner .inner_txt li ion-icon {
   font-size: 30px;
   margin-right: 5%;
+}
+@media screen and (max-width: 1024px) {
+  .inner .inner_txt li ion-icon {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .inner .inner_txt li ion-icon {
+    font-size: 15px;
+  }
 }
 
 .points {
