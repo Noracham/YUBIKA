@@ -3,10 +3,11 @@
 @use "variables";
 
 header{
+    position: absolute;
     width: 100%;
     height: 70px;
     background-color: rgba(0, 0, 0, 0.509);
-    position: absolute;
+    z-index: 9999;
     ul{
         height: 70px;
         margin: 0;
@@ -28,34 +29,33 @@ header{
     }
 }
 .main{
+    position: relative;
     color: #fff;
     width: 100vw;
-    height: 120vh;
+    height: 110vh;
     background-image: url(../img/main_truck.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     .main_catch{
-        position: relative;
-        margin-left: 5%;
+        position: absolute;
+        left: 5%;
         top: 30%;
-    }
-    h1{
-        font-size: 43px;
-        font-weight: 550;
-        line-height: 70px;
-    }
-    p{
-        position: relative;
-        font-family: "Paralucent Text";
-        font-style: Book;
-        font-weight: 100;
-        font-size: 25px;
+        h1{
+            font-size: 43px;
+            font-weight: 550;
+            line-height: 70px;
+        }
+        p{
+            font-family: "Paralucent Text";
+            font-weight: 100;
+            font-size: 25px;
+        }
     }
 }
 .inner{
     position: absolute;
     right: 0;
-    top: -30vh;
+    top: -15vh;
     width: 50%;
     height: 300px;
     background-color: rgba(255, 0, 0, 0.651);
@@ -65,6 +65,7 @@ header{
         top: 0;
         right: 7%;
         color: rgb(255, 5, 5);
+
         li{
             font-family: "Paralucent Text";
             font-weight: 100;
@@ -72,7 +73,6 @@ header{
             &:not(:first-child){
                 margin: 30px auto;
             }
-
         }
 
         
@@ -110,40 +110,42 @@ header{
     }
 }
 .one_point{
+    display: flex;
+    align-items: center;
     &:first-of-type{
-        &::before{
+        .point_img::before{
             content: "POINT1";
-            position: absolute;
+            position: relative;
             font-family: "Paralucent Text";
             font-weight: bold;
             font-size: 70px;
             opacity: 0.4;
-            top: 15.5%;
-            left: 12%;
+            top: 5.5%;
+            left: 0;
         }
     }
     &:nth-of-type(2){
-        &::before{
+        .point_img::before{
             content: "POINT2";
-            position: absolute;
+            position: relative;
             font-family: "Paralucent Text";
             font-weight: bold;
             font-size: 70px;
             opacity: 0.4;
-            bottom: 47.7%;
-            right: 12%;
+            top: 5.5%;
+            left: 0;
         }
     }
     &:nth-of-type(3){
-        &::before{
+        .point_img::before{
             content: "POINT3";
-            position: absolute;
+            position: relative;
             font-family: "Paralucent Text";
             font-weight: bold;
             font-size: 70px;
             opacity: 0.4;
-            bottom: 17%;
-            left:12%;
+            top: 5.5%;
+            left:0;
         }
     }
 
@@ -160,8 +162,8 @@ header{
 
     .one_point_txt{
         width: 50%;
-        font-size: 15px;
-        line-height: 25px;
+        font-size: 13px;
+        line-height: 22px;
         h2{
             color: rgb(255, 207, 158);
             margin-top: 0;

@@ -1,3 +1,8 @@
+html {
+  margin: 0;
+  padding: 0;
+}
+
 body {
   position: relative;
   font-family: YuGothic, "Yu Gothic", sans-serif;
@@ -12,10 +17,11 @@ a {
 }
 
 header {
+  position: absolute;
   width: 100%;
   height: 70px;
   background-color: rgba(0, 0, 0, 0.509);
-  position: absolute;
+  z-index: 9999;
 }
 header ul {
   height: 70px;
@@ -38,27 +44,26 @@ header ul a {
 }
 
 .main {
+  position: relative;
   color: #fff;
   width: 100vw;
-  height: 120vh;
+  height: 110vh;
   background-image: url(../img/main_truck.jpg);
   background-size: cover;
   background-repeat: no-repeat;
 }
 .main .main_catch {
-  position: relative;
-  margin-left: 5%;
+  position: absolute;
+  left: 5%;
   top: 30%;
 }
-.main h1 {
+.main .main_catch h1 {
   font-size: 43px;
   font-weight: 550;
   line-height: 70px;
 }
-.main p {
-  position: relative;
+.main .main_catch p {
   font-family: "Paralucent Text";
-  font-style: Book;
   font-weight: 100;
   font-size: 25px;
 }
@@ -66,7 +71,7 @@ header ul a {
 .inner {
   position: absolute;
   right: 0;
-  top: -30vh;
+  top: -15vh;
   width: 50%;
   height: 300px;
   background-color: rgba(255, 0, 0, 0.651);
@@ -120,39 +125,41 @@ header ul a {
 }
 
 .one_point {
+  display: flex;
+  align-items: center;
   margin-top: 15%;
   display: flex;
   width: 80%;
 }
-.one_point:first-of-type::before {
+.one_point:first-of-type .point_img::before {
   content: "POINT1";
-  position: absolute;
+  position: relative;
   font-family: "Paralucent Text";
   font-weight: bold;
   font-size: 70px;
   opacity: 0.4;
-  top: 15.5%;
-  left: 12%;
+  top: 5.5%;
+  left: 0;
 }
-.one_point:nth-of-type(2)::before {
+.one_point:nth-of-type(2) .point_img::before {
   content: "POINT2";
-  position: absolute;
+  position: relative;
   font-family: "Paralucent Text";
   font-weight: bold;
   font-size: 70px;
   opacity: 0.4;
-  bottom: 47.7%;
-  right: 12%;
+  top: 5.5%;
+  left: 0;
 }
-.one_point:nth-of-type(3)::before {
+.one_point:nth-of-type(3) .point_img::before {
   content: "POINT3";
-  position: absolute;
+  position: relative;
   font-family: "Paralucent Text";
   font-weight: bold;
   font-size: 70px;
   opacity: 0.4;
-  bottom: 17%;
-  left: 12%;
+  top: 5.5%;
+  left: 0;
 }
 .one_point .point_img {
   width: 45%;
@@ -163,8 +170,8 @@ header ul a {
 }
 .one_point .one_point_txt {
   width: 50%;
-  font-size: 15px;
-  line-height: 25px;
+  font-size: 13px;
+  line-height: 22px;
 }
 .one_point .one_point_txt h2 {
   color: rgb(255, 207, 158);
