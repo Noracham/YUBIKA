@@ -45,6 +45,11 @@ header ul .title_logo {
   font-size: 35px;
   font-weight: bold;
 }
+@media screen and (max-width: 768px) {
+  header ul .title_logo {
+    font-size: 30px;
+  }
+}
 header ul a {
   color: #fff;
 }
@@ -68,10 +73,23 @@ header ul a {
   font-weight: 550;
   line-height: 70px;
 }
+@media screen and (max-width: 768px) {
+  .main .main_catch h1 {
+    font-size: 23px;
+    line-height: 40px;
+  }
+}
 .main .main_catch p {
-  font-family: "Paralucent Text";
-  font-weight: 100;
+  font-family: paralucent-text, sans-serif;
+  font-weight: 400;
+  font-style: normal;
   font-size: 25px;
+}
+@media screen and (max-width: 768px) {
+  .main .main_catch p {
+    font-size: 15px;
+    margin-top: 10%;
+  }
 }
 
 .inner {
@@ -120,8 +138,9 @@ header ul a {
   display: flex;
   align-items: center;
   position: relative;
-  font-family: "Paralucent Text";
-  font-weight: 100;
+  font-family: paralucent-text, sans-serif;
+  font-style: normal;
+  font-weight: 400;
   font-size: 20px;
 }
 @media screen and (max-width: 1024px) {
