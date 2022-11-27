@@ -99,8 +99,8 @@ header ul a {
   width: 50%;
   height: 300px;
   background-color: rgb(0, 0, 0);
-  -webkit-clip-path: polygon(0% 100%, 60% 0%, 100% 0%, 100% 100%);
-          clip-path: polygon(0% 100%, 60% 0%, 100% 0%, 100% 100%);
+  -webkit-clip-path: polygon(0% 130%, 60% 0%, 100% 0%, 100% 100%);
+          clip-path: polygon(0% 130%, 60% 0%, 100% 0%, 100% 100%);
 }
 @media screen and (max-width: 768px) {
   .inner {
@@ -126,12 +126,12 @@ header ul a {
 }
 @media screen and (max-width: 768px) {
   .inner .inner_txt {
-    right: -7%;
+    right: 0;
   }
 }
 @media screen and (max-width: 450px) {
   .inner .inner_txt {
-    right: -12%;
+    right: 0;
   }
 }
 .inner .inner_txt li {
@@ -140,7 +140,7 @@ header ul a {
   position: relative;
   font-family: paralucent-text, sans-serif;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 100;
   font-size: 20px;
 }
 @media screen and (max-width: 1024px) {
@@ -156,9 +156,12 @@ header ul a {
 .inner .inner_txt li:not(:first-child) {
   margin: 30px auto;
 }
+.inner .inner_txt li:nth-of-type(2) p {
+  width: 120%;
+}
 .inner .inner_txt li p {
   margin: 0;
-  width: 150px;
+  width: auto;
 }
 .inner .inner_txt li ion-icon {
   font-size: 30px;
@@ -196,64 +199,121 @@ header ul a {
   position: relative;
   text-align: center;
 }
+@media screen and (max-width: 768px) {
+  .points .points_main h1 {
+    font-size: 30px;
+  }
+}
 .points .points_main h1::before {
   position: absolute;
   content: "POINTS";
-  font-family: "Paralucent Text";
-  font-style: bold;
+  font-family: paralucent, sans-serif;
+  font-weight: 700;
+  font-style: normal;
   font-size: 70px;
   opacity: 0.4;
   top: -50px;
 }
+@media screen and (max-width: 768px) {
+  .points .points_main h1::before {
+    top: -30px;
+    font-size: 50px;
+  }
+}
 
 .one_point {
   display: flex;
-  align-items: center;
-  margin-top: 15%;
+  align-items: flex-start;
+  margin-top: 12%;
   display: flex;
   width: 80%;
+}
+@media screen and (max-width: 768px) {
+  .one_point {
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+  }
+}
+.one_point:first-of-type {
+  margin-top: 5%;
 }
 .one_point:first-of-type .point_img::before {
   content: "POINT1";
   position: relative;
-  font-family: "Paralucent Text";
-  font-weight: bold;
+  font-family: paralucent, sans-serif;
+  font-weight: 700;
+  font-style: normal;
   font-size: 70px;
   opacity: 0.4;
-  top: 5.5%;
+  top: 30px;
   left: 0;
+}
+@media screen and (max-width: 768px) {
+  .one_point:first-of-type .point_img::before {
+    font-size: 50px;
+    top: 20px;
+  }
 }
 .one_point:nth-of-type(2) .point_img::before {
   content: "POINT2";
   position: relative;
-  font-family: "Paralucent Text";
-  font-weight: bold;
+  font-family: paralucent, sans-serif;
+  font-weight: 700;
+  font-style: normal;
   font-size: 70px;
   opacity: 0.4;
-  top: 5.5%;
+  top: 30px;
   left: 0;
+}
+@media screen and (max-width: 768px) {
+  .one_point:nth-of-type(2) .point_img::before {
+    font-size: 50px;
+    top: 20px;
+  }
 }
 .one_point:nth-of-type(3) .point_img::before {
   content: "POINT3";
   position: relative;
-  font-family: "Paralucent Text";
-  font-weight: bold;
+  font-family: paralucent, sans-serif;
+  font-weight: 700;
+  font-style: normal;
   font-size: 70px;
   opacity: 0.4;
-  top: 5.5%;
+  top: 30px;
   left: 0;
+}
+@media screen and (max-width: 768px) {
+  .one_point:nth-of-type(3) .point_img::before {
+    font-size: 50px;
+    top: 20px;
+  }
 }
 .one_point .point_img {
   width: 45%;
   padding: 0 3%;
+}
+@media screen and (max-width: 768px) {
+  .one_point .point_img {
+    max-width: 500px;
+    width: 100%;
+  }
 }
 .one_point .point_img img {
   width: 100%;
 }
 .one_point .one_point_txt {
   width: 50%;
+  max-width: 500px;
   font-size: 13px;
   line-height: 22px;
+  margin-top: 7%;
+}
+@media screen and (max-width: 768px) {
+  .one_point .one_point_txt {
+    width: 100%;
+    margin-top: 10%;
+  }
 }
 .one_point .one_point_txt h2 {
   color: rgb(255, 207, 158);
