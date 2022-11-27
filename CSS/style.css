@@ -74,7 +74,7 @@ header ul a {
   top: -15vh;
   width: 50%;
   height: 300px;
-  background-color: rgba(255, 0, 0, 0.651);
+  background-color: rgba(0, 0, 0, 0.651);
   -webkit-clip-path: polygon(0% 100%, 60% 0%, 100% 0%, 100% 100%);
           clip-path: polygon(0% 100%, 60% 0%, 100% 0%, 100% 100%);
 }
@@ -82,15 +82,27 @@ header ul a {
   position: absolute;
   top: 0;
   right: 7%;
-  color: rgb(255, 5, 5);
+  color: rgb(255, 255, 255);
+  padding: 0;
 }
 .inner .inner_txt li {
+  display: flex;
+  align-items: center;
+  position: relative;
   font-family: "Paralucent Text";
   font-weight: 100;
   font-size: 20px;
 }
 .inner .inner_txt li:not(:first-child) {
   margin: 30px auto;
+}
+.inner .inner_txt li p {
+  margin: 0;
+  width: 150px;
+}
+.inner .inner_txt li ion-icon {
+  font-size: 30px;
+  margin-right: 5%;
 }
 
 .points {
