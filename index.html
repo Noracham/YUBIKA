@@ -1,74 +1,107 @@
 <!DOCTYPE html>
 <html lang="ja">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/normalize.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/normalize.css" />
     <title>YUBIKA</title>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <ul>
-            <li><a>会社概要</a></li>
-            <li><a>当社の強み</a></li>
-            <li class="title_logo"><a href="#">YUBIKA</a></li>
-            <li><a>採用情報</a></li>
-            <li><a>お問い合わ</a>せ</li>
-        </ul>
+      <ul>
+        <li><a>会社概要</a></li>
+        <li><a>当社の強み</a></li>
+        <li class="title_logo"><a href="#">YUBIKA</a></li>
+        <li><a>採用情報</a></li>
+        <li><a>お問い合わ</a>せ</li>
+      </ul>
     </header>
     <section class="main">
-        <div class="main_catch">
-        <h1>『くるまを運ぶ』に関わる<br>
-            ありとあらゆる満足を目指して。</h1>
-            <p>Aiming for all kinds of satisfaction related<br>
-                to “transporting vehicles”.</p>
-            </div>
-        </section>
-        <section class="points">
-            <div class="inner">
-                <ul class="inner_txt">
-                    <li><ion-icon name="chevron-down-outline"></ion-icon><p>Scroll down</p></li>
-                    <li><ion-icon name="call-outline"></ion-icon><p>0577-33-3333</p></li>
-                    <li><ion-icon name="time-outline"></ion-icon><p>9:00 - 18:00</p></li>
-                </ul>
-            </div>
-                <div class="points_main">
+      <div class="main_catch">
+        <h1>
+          『くるまを運ぶ』に関わる<br />
+          ありとあらゆる満足を目指して。
+        </h1>
+        <p>
+          Aiming for all kinds of satisfaction related<br />
+          to “transporting vehicles”.
+        </p>
+      </div>
+      <div class="video_all">
+        <video id="video" poster="img/main_truck.jpg" webkit-playsinline playsinline muted autoplay loop>
+            <source src="img/4630_1280x720_AdobeExpress.mp4" type="video/mp4">
+        </video>
+      </div>
+    </section>
+    <section class="points">
+        <!-- <ul class="inner_txt">
+          <li>
+            <ion-icon name="chevron-down-outline"></ion-icon>
+            <p>Scroll down</p>
+          </li>
+          <li>
+            <ion-icon name="call-outline"></ion-icon>
+            <p>0577-33-3333</p>
+          </li>
+          <li>
+            <ion-icon name="time-outline"></ion-icon>
+            <p>9:00 - 18:00</p>
+          </li>
+        </ul> -->
+      <div class="points_main">
+        <h1>安心安全に愛車をお届け</h1>
+        <div class="one_point">
+          <div class="point_img"><img src="img/truck_1.jpg" alt="" /></div>
+          <div class="one_point_txt">
+            <h2>ひとつの輸送ニーズを形に</h2>
+            <p>
+              国内新車輸送サービス、中古車輸送サービス、マイカー輸送サービスなどを手掛けており、お客様の車を最適な状態でお届けします。<br /><br />国内自動車メーカーの工場で生産された新車を、全国の新車センターあるいは納車前整備工場へ、安全かつ迅速に輸送しています。<br />またオートオークション会場をはじめ、成長著しい共有在庫市場において、お客様が出品する商品車、または落札した商品車をご希望の場所まで迅速に輸送いたします。
+            </p>
+          </div>
+        </div>
+        <div class="one_point" id="change_a">
+          <div class="point_img" id="change_b">
+            <img src="img/safe.jpg" alt="" />
+          </div>
+          <div class="one_point_txt">
+            <h2>安心安全な管理体制</h2>
+            <p>
+              安全品質会議の開催や安全・品質監査の実施、作業観察の実施などにより、事故発生の未然予防や再発防止に努め、安全水準の向上を進めています。<br /><br />本社において、毎月、経営層及び各部門の代表者による「安全・品質会議」を開催し、物流現場での事故発生状況、事故発生リスクの共有を行い事故発生の未然防止・再発防止に努めています。
+            </p>
+          </div>
+        </div>
+        <div class="one_point">
+          <div class="point_img"><img src="img/kensyu.jpg" alt="" /></div>
+          <div class="one_point_txt">
+            <h2>豊富な研修制度</h2>
+            <p>
+              YUBIKAでは、安定した安全・品質水準を確保するため、新人研修、フォロー研修、ドライブレコーダーによる運転指導などさまざまな教育・訓練を実施しています。<br /><br />さらにYUBIKAでは適性診断を実施しており機材乗務や自走・構内、海運荷役の安全品質を維持するため日本全国で適性診断車による検査を実施しています。
+              定期的に検査することで運転に関するクセを認識し事故防止に役立てています。
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-                    <h1>安心安全に愛車をお届け</h1>
-                    <div class="one_point">
-                        <div class="point_img"><img src="img/truck_1.jpg" alt=""></div>
-                        <div class="one_point_txt">
-                            <h2>ひとつの輸送ニーズを形に</h2>
-                            <p>国内新車輸送サービス、中古車輸送サービス、マイカー輸送サービスなどを手掛けており、お客様の車を最適な状態でお届けします。<br><br>国内自動車メーカーの工場で生産された新車を、全国の新車センターあるいは納車前整備工場へ、安全かつ迅速に輸送しています。<br>またオートオークション会場をはじめ、成長著しい共有在庫市場において、お客様が出品する商品車、または落札した商品車をご希望の場所まで迅速に輸送いたします。</p>
-                        </div>
-                    </div>
-                    <div class="one_point"id="change_a">
-                        <div class="point_img"id="change_b"><img src="img/truck_1.jpg" alt=""></div>
-                        <div class="one_point_txt">
-                            <h2 >安心安全な管理体制</h2>
-                            <p >安全品質会議の開催や安全・品質監査の実施、作業観察の実施などにより、事故発生の未然予防や再発防止に努め、安全水準の向上を進めています。<br><br>本社において、毎月、経営層及び各部門の代表者による「安全・品質会議」を開催し、物流現場での事故発生状況、事故発生リスクの共有を行い事故発生の未然防止・再発防止に努めています。</p>
-                        </div>
-                    </div>
-                    <div class="one_point">
-                        <div class="point_img"><img src="img/truck_1.jpg" alt=""></div>
-                        <div class="one_point_txt">
-                            <h2>豊富な研修制度</h2>
-                            <p>YUBIKAでは、安定した安全・品質水準を確保するため、新人研修、フォロー研修、ドライブレコーダーによる運転指導などさまざまな教育・訓練を実施しています。<br><br>さらにYUBIKAでは適性診断を実施しており機材乗務や自走・構内、海運荷役の安全品質を維持するため日本全国で適性診断車による検査を実施しています。
-                                定期的に検査することで運転に関するクセを認識し事故防止に役立てています。</p>
-                        </div>
-                    </div>
+    <section class="form_link">
+        <p>aaaaaaaaaa</p>
+    </section>
 
-                    
-                    
-
-                </div>
-
-        </section>
-    <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.6.1.js"
+      integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI="
+      crossorigin="anonymous"
+    ></script>
     <script src="js/index.js"></script>
-</body>
+  </body>
 </html>
