@@ -240,15 +240,29 @@ header{
 .form_link{
     background-color: rgba(255, 255, 255, 0.768);
     padding-bottom: 5%;
+    @include m.mq(sp){
+        padding:10% 0 25%;
+    }
     h1{
         text-align: center;
         padding: 5%;
+    @include m.mq(sp){
+        font-size: 23px;
+        padding: 15% 0;
+    }
     }
     .master{
         display: flex;
         justify-content: space-around;
         width: 70%;
         margin: 0 auto;
+        @include m.mq(tab){
+            width: 90%;
+        }
+        @include m.mq(sp){
+            flex-direction: column;
+            align-items: center;
+        }
         .circle{
             position: relative;
             font-size: 20px;
@@ -260,6 +274,11 @@ header{
             display: flex;
             justify-content: center;
             align-items: center;
+            @include m.mq(sp){
+                &:not(:last-of-type){
+                    margin-bottom: 5%;
+                }
+            }
             &::after{
                 display: flex;
                 justify-content: center;

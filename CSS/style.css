@@ -278,15 +278,37 @@ header ul a {
   background-color: rgba(255, 255, 255, 0.768);
   padding-bottom: 5%;
 }
+@media screen and (max-width: 768px) {
+  .form_link {
+    padding: 10% 0 25%;
+  }
+}
 .form_link h1 {
   text-align: center;
   padding: 5%;
+}
+@media screen and (max-width: 768px) {
+  .form_link h1 {
+    font-size: 23px;
+    padding: 15% 0;
+  }
 }
 .form_link .master {
   display: flex;
   justify-content: space-around;
   width: 70%;
   margin: 0 auto;
+}
+@media screen and (max-width: 1024px) {
+  .form_link .master {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .form_link .master {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 .form_link .master .circle {
   position: relative;
@@ -299,6 +321,11 @@ header ul a {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+@media screen and (max-width: 768px) {
+  .form_link .master .circle:not(:last-of-type) {
+    margin-bottom: 5%;
+  }
 }
 .form_link .master .circle::after {
   display: flex;
