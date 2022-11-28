@@ -1,3 +1,4 @@
+@charset "UTF-8";
 html {
   margin: 0;
   padding: 0;
@@ -110,6 +111,7 @@ header ul a {
   height: 56.25vw;
   min-width: 100%;
   min-height: 100%;
+  filter: brightness(80%);
 }
 
 .points {
@@ -270,4 +272,55 @@ header ul a {
 .go_link h1 {
   font-size: 30px;
   color: #000;
+}
+
+.form_link {
+  background-color: rgba(255, 255, 255, 0.768);
+  padding-bottom: 5%;
+}
+.form_link h1 {
+  text-align: center;
+  padding: 5%;
+}
+.form_link .master {
+  display: flex;
+  justify-content: space-around;
+  width: 70%;
+  margin: 0 auto;
+}
+.form_link .master .circle {
+  position: relative;
+  font-size: 20px;
+  font-weight: bold;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background-color: rgb(255, 239, 209);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.form_link .master .circle::after {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  font-weight: normal;
+  content: "無料";
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  color: #fff;
+  background-color: #FF9500;
+  bottom: 0;
+  right: 0;
+}
+.form_link .master .circle::before {
+  z-index: 2;
+  position: absolute;
+  content: "click!";
+  font-size: 10px;
+  bottom: 10px;
+  right: 23px;
+  color: #fff;
 }/*# sourceMappingURL=style.css.map */
