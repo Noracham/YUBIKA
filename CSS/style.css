@@ -400,6 +400,12 @@ header ul a {
   font-size: 35px;
   text-align: center;
 }
+@media screen and (max-width: 768px) {
+  .news h1 {
+    font-size: 27px;
+    padding-top: 10%;
+  }
+}
 .news ul {
   padding: 2% 0 15%;
   margin: 0 auto;
@@ -409,6 +415,19 @@ header ul a {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+@media screen and (max-width: 1024px) {
+  .news ul {
+    width: 90%;
+    min-width: 0;
+    padding-bottom: 20%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .news ul {
+    width: 95%;
+    padding-bottom: 40%;
+  }
 }
 .news ul li {
   padding: 50px 0 10px;
@@ -421,10 +440,57 @@ header ul a {
 .news ul li span {
   display: inline-block;
 }
+.news ul li span:first-of-type {
+  min-width: 70px;
+}
 .news ul li span:nth-of-type(2) {
+  text-align: center;
   color: #fff;
   background-color: #000;
   font-size: 17px;
   padding: 5px 15px;
   margin: 0 60px;
+}
+@media screen and (max-width: 1024px) {
+  .news ul li span:nth-of-type(2) {
+    font-size: 15px;
+    margin: 0 40px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .news ul li span:nth-of-type(2) {
+    font-size: 10px;
+    margin: 0 15px;
+    min-width: 40px;
+    padding: 3px 10px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .news ul li span {
+    font-size: 17px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .news ul li span {
+    font-size: 13px;
+  }
+}
+.news div {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 15%;
+}
+@media screen and (max-width: 1024px) {
+  .news div {
+    width: 20%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .news div {
+    width: 35%;
+  }
+}
+.news div img {
+  width: 100%;
 }/*# sourceMappingURL=style.css.map */
