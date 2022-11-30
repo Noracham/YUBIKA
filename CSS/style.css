@@ -69,10 +69,10 @@ header ul a {
   z-index: 500;
   position: absolute;
   left: 5%;
-  top: 30%;
+  top: 35%;
 }
 .main .main_catch h1 {
-  font-size: 43px;
+  font-size: 50px;
   font-weight: 550;
   line-height: 70px;
   text-shadow: 0 0 15px #666;
@@ -87,7 +87,7 @@ header ul a {
   font-family: paralucent-text, sans-serif;
   font-weight: 400;
   font-style: normal;
-  font-size: 25px;
+  font-size: 30px;
   text-shadow: 0 0 10px #666;
 }
 @media screen and (max-width: 768px) {
@@ -390,4 +390,41 @@ header ul a {
     margin-top: 7%;
     width: 40vw;
   }
+}
+
+.news {
+  background-color: #fff;
+}
+.news h1 {
+  padding-top: 5%;
+  font-size: 35px;
+  text-align: center;
+}
+.news ul {
+  padding: 2% 0 15%;
+  margin: 0 auto;
+  width: 60%;
+  min-width: 900px;
+  max-width: 1200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.news ul li {
+  padding: 50px 0 10px;
+  border-bottom: 2px solid #000;
+  font-size: 20px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.news ul li span {
+  display: inline-block;
+}
+.news ul li span:nth-of-type(2) {
+  color: #fff;
+  background-color: #000;
+  font-size: 17px;
+  padding: 5px 15px;
+  margin: 0 60px;
 }/*# sourceMappingURL=style.css.map */
