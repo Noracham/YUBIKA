@@ -5,19 +5,37 @@
 header{
     position: absolute;
     width: 100%;
-    height: 70px;
+    height: 80px;
     background-color: rgba(0, 0, 0, 0.509);
     z-index: 9999;
     ul{
-        height: 70px;
+        height: 80px;
         margin: 0;
         padding: 0;
-        color: white;
         display: flex;
         justify-content: space-around;
         align-items: center;
         li{
-            font-size: 15px;
+            color: white;
+            cursor: pointer;
+            font-size: 16px;
+            position: relative;
+            &:not(:nth-of-type(3)) a::after{
+                transition: .5s;
+                position: absolute;
+                content: "";
+                width: 0;
+                height: 2px;
+                left: 0;
+                bottom: -3px;
+                background-color: #fff;
+            }
+            &:not(:nth-of-type(3)) a:hover::after{
+                width: 100%;
+            }
+            a{
+                transition: .2s;
+            }
             @include m.mq(sp){
             &:not(:nth-of-type(3)){
                 opacity: 0;
@@ -25,8 +43,11 @@ header{
             }
         }
         .title_logo{
-            font-size: 35px;
-            font-weight: bold;
+            width: 11%;
+            img{
+                width: 100%;
+                margin: 0 auto;
+            }
             @include m.mq(sp){
                 font-size: 30px;
             }
@@ -196,13 +217,19 @@ header{
     margin-top: 10%;
     display: flex;
     width: 80%;
+    @include m.mq(tab){
+        width: 90%;
+    }
     @include m.mq(sp){
         margin-top: 30%;
     }
     .point_img{
         width: 45%;
         aspect-ratio: 4/3;
-        padding: 0 3%;   
+        padding: 0 3%;
+        @include m.mq(tab){
+            width: 55%;
+        }   
         @include m.mq(sp){
             max-width: 500px;
             width: 100%;
@@ -219,14 +246,21 @@ header{
         font-size: 17px;
         line-height: 25px;
         margin-top: 7%;
+        @include m.mq(tab){
+            font-size: 14px;
+        }
         @include m.mq(sp){
             width: 100%;
             margin-top: 10%;
+            font-size: 14px;
         }
         h2{
             color: rgb(255, 207, 158);
             margin-top: 0;
-            font-size: 25px;
+            font-size: 32px;
+            @include m.mq(tab){
+                font-size: 25px;
+            }
         }
     }
 }
@@ -240,7 +274,7 @@ header{
 .form_link{
     margin-top: 2%;
     background-color: rgba(255, 255, 255, 0.768);
-    padding-bottom: 5%;
+    padding: 2% 0 5%;
     @include m.mq(sp){
         padding:10% 0 25%;
     }
@@ -248,6 +282,7 @@ header{
         margin-top: 0;
         text-align: center;
         padding: 5%;
+        font-size: 45px;
     @include m.mq(sp){
         font-size: 23px;
         padding: 15% 0;
@@ -280,6 +315,7 @@ header{
             justify-content: center;
             align-items: center;
             text-align: center;
+            transition: .5s;
             @include m.mq(sp){
                 width: 125px;
                 height: 125px;
@@ -319,6 +355,9 @@ header{
                     bottom: 7px;
                 }
             }
+                &:hover{
+                    transform: scale(1.1);
+                }
         }
     }
     }
@@ -402,19 +441,20 @@ header{
 }
 .news{
     margin-top: 2%;
+    padding-top: 2%;
     background-color: #fff;
     h1{
         margin: 0;
         padding-top: 5%;
-        font-size: 35px;
+        font-size: 45px;
         text-align: center;
         @include m.mq(sp){
-            font-size: 27px;
+            font-size: 30px;
             padding-top: 10%;
         }
     }
     ul{
-        padding: 2% 0 15%;
+        padding: 2% 0 7%;
         margin: 0 auto;
         width: 60%;
         min-width: 900px;
@@ -517,6 +557,7 @@ header{
             line-height: 25px;
             font-weight: normal;
             color: #fff;
+
         }
         ul{
             align-self: center;
