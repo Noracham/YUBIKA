@@ -29,6 +29,11 @@ header {
   background-color: rgba(0, 0, 0, 0.509);
   z-index: 9999;
 }
+@media screen and (max-width: 768px) {
+  header {
+    height: 70px;
+  }
+}
 header ul {
   height: 80px;
   margin: 0;
@@ -36,6 +41,11 @@ header ul {
   display: flex;
   justify-content: space-around;
   align-items: center;
+}
+@media screen and (max-width: 768px) {
+  header ul {
+    height: 70px;
+  }
 }
 header ul li {
   color: white;
@@ -67,14 +77,19 @@ header ul li a {
 header ul .title_logo {
   width: 11%;
 }
-header ul .title_logo img {
-  width: 100%;
-  margin: 0 auto;
+@media screen and (max-width: 1024px) {
+  header ul .title_logo {
+    width: 20%;
+  }
 }
 @media screen and (max-width: 768px) {
   header ul .title_logo {
-    font-size: 30px;
+    width: 50%;
   }
+}
+header ul .title_logo img {
+  width: 100%;
+  margin: 0 auto;
 }
 header ul a {
   color: #fff;
@@ -638,4 +653,32 @@ header ul a {
 }
 .footer .f_info ul li:first-child {
   border-top: 1px solid #fff;
+}
+
+.recruit_bg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 60vh;
+  background-image: url(../img/main_truck.jpg);
+  background-size: cover;
+  background-position: bottom 45% left 0%;
+}
+.recruit_bg h1 {
+  position: relative;
+  font-size: 45px;
+  color: #fff;
+}
+.recruit_bg h1::after {
+  position: absolute;
+  content: "RECRUIT";
+  font-family: paralucent, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 35px;
+  color: rgba(207, 207, 207, 0.458);
+  bottom: 0;
+  left: 20px;
+  bottom: -50px;
 }/*# sourceMappingURL=style.css.map */
