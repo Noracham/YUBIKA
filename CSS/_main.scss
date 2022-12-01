@@ -82,7 +82,7 @@ header{
         top: 35%;
         h1{
             font-size: 50px;
-            font-weight: 550;
+            font-weight: bold;
             line-height: 70px;
             text-shadow: 0 0 15px #666;
             @include m.mq(sp){
