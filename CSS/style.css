@@ -84,7 +84,8 @@ header ul .title_logo {
 }
 @media screen and (max-width: 768px) {
   header ul .title_logo {
-    width: 50%;
+    width: 150px;
+    min-width: 150px;
   }
 }
 header ul .title_logo img {
@@ -670,6 +671,11 @@ header ul a {
   font-size: 45px;
   color: #fff;
 }
+@media screen and (max-width: 768px) {
+  .recruit_bg h1 {
+    font-size: 30px;
+  }
+}
 .recruit_bg h1::after {
   position: absolute;
   content: "RECRUIT";
@@ -681,4 +687,10 @@ header ul a {
   bottom: 0;
   left: 20px;
   bottom: -50px;
+}
+@media screen and (max-width: 768px) {
+  .recruit_bg h1::after {
+    font-size: 25px;
+    left: 10px;
+  }
 }/*# sourceMappingURL=style.css.map */
