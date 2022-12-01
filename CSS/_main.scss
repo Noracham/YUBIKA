@@ -50,7 +50,8 @@ header{
             }
         }
         .title_logo{
-            width: 13%;
+            width: 11%;
+            min-width: 160px;
             @include m.mq(tab){
                 width: 20%;
             }
@@ -139,6 +140,9 @@ header{
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        @include m.mq(sp){
+            padding: 30% 0;
+        }
         h1{
             font-size: 45px;
             position: relative;
@@ -463,7 +467,7 @@ header{
         text-align: center;
         @include m.mq(sp){
             font-size: 30px;
-            padding-top: 10%;
+            padding-top: 20%;
         }
     }
     ul{
@@ -482,7 +486,7 @@ header{
         }
         @include m.mq(sp){
             width: 95%;
-            padding-bottom: 40%;
+            padding-bottom: 30%;
         }
         li{
             padding: 50px 0 10px;
@@ -495,6 +499,7 @@ header{
                 display: inline-block;
                 &:first-of-type{
                     min-width: 70px;
+                    white-space: nowrap;
                 }
                 &:nth-of-type(2){
                     text-align: center;
@@ -635,10 +640,13 @@ header{
             font-style: normal;
             font-size: 35px;
             color: rgba(207, 207, 207, 0.458);
-            bottom: 0;
-            left: 20px;
+            left: 0;
+            right: 0;
+            margin: auto;
             bottom: -50px;
-
+            @include m.mq(sp){
+                font-size: 25px;
+            }
         }
     }
 }
@@ -755,12 +763,6 @@ header{
     h1{
         &::after{
             content: "DRIVER";
-            left: 210px;
-            @include m.mq(sp){
-                left: 0;
-                right: 0;
-                margin: auto;
-            }
         }
     }
 }
@@ -768,7 +770,6 @@ header{
     h1{
         &::after{
             content: "ADMIN";
-            left: 72px;
         }
     }
 }
@@ -776,7 +777,6 @@ header{
     h1{
         &::after{
             content: "COMPANY";
-            left: 5px;
         }
     }
 }

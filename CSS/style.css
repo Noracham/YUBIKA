@@ -189,7 +189,8 @@ header ul li a {
   }
 }
 header ul .title_logo {
-  width: 13%;
+  width: 11%;
+  min-width: 160px;
 }
 @media screen and (max-width: 1024px) {
   header ul .title_logo {
@@ -284,6 +285,11 @@ header ul a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+@media screen and (max-width: 768px) {
+  .points .points_main {
+    padding: 30% 0;
+  }
 }
 .points .points_main h1 {
   font-size: 45px;
@@ -602,7 +608,7 @@ header ul a {
 @media screen and (max-width: 768px) {
   .news h1 {
     font-size: 30px;
-    padding-top: 10%;
+    padding-top: 20%;
   }
 }
 .news ul {
@@ -625,7 +631,7 @@ header ul a {
 @media screen and (max-width: 768px) {
   .news ul {
     width: 95%;
-    padding-bottom: 40%;
+    padding-bottom: 30%;
   }
 }
 .news ul li {
@@ -641,6 +647,7 @@ header ul a {
 }
 .news ul li span:first-of-type {
   min-width: 70px;
+  white-space: nowrap;
 }
 .news ul li span:nth-of-type(2) {
   text-align: center;
@@ -799,9 +806,15 @@ header ul a {
   font-style: normal;
   font-size: 35px;
   color: rgba(207, 207, 207, 0.458);
-  bottom: 0;
-  left: 20px;
+  left: 0;
+  right: 0;
+  margin: auto;
   bottom: -50px;
+}
+@media screen and (max-width: 768px) {
+  .recruit_bg h1::after {
+    font-size: 25px;
+  }
 }
 
 .recruit_info {
@@ -924,24 +937,14 @@ header ul a {
 
 .r_bg h1::after {
   content: "DRIVER";
-  left: 210px;
-}
-@media screen and (max-width: 768px) {
-  .r_bg h1::after {
-    left: 0;
-    right: 0;
-    margin: auto;
-  }
 }
 
 .r3_bg h1::after {
   content: "ADMIN";
-  left: 72px;
 }
 
 .c_bg h1::after {
   content: "COMPANY";
-  left: 5px;
 }
 
 .r_info {
