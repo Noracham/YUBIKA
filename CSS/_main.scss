@@ -626,6 +626,7 @@ header{
         position: relative;
         font-size: 45px;
         color: #fff;
+        text-align: center;
         &::after{
             position: absolute;
             content: "RECRUIT";
@@ -755,6 +756,11 @@ header{
         &::after{
             content: "DRIVER";
             left: 210px;
+            @include m.mq(sp){
+                left: 0;
+                right: 0;
+                margin: auto;
+            }
         }
     }
 }
@@ -780,6 +786,9 @@ header{
     flex-direction: column;
     align-items: center;
     background-color: #fff;
+    @include m.mq(sp){
+        padding: 20% 0;
+    }
     h1{
         font-size: 45px;
         text-align: center;
@@ -788,6 +797,9 @@ header{
     table{
         margin: 8% 0;
         width: 80vw;
+        @include m.mq(sp){
+            width: 95vw;
+        }
         tr{
             border-bottom: 1px dotted rgb(97, 96, 96);
             padding: 3% 0;
@@ -825,6 +837,7 @@ header{
     }
 }
 .Form{
+    overflow-x: hidden;
     margin: 0;
     padding: 10% 0;
     background-color: #fff;
