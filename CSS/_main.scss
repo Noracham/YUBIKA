@@ -644,7 +644,7 @@ header{
     }
 }
 .recruit_info{
-    padding-top: 5%;
+    padding: 5% 0 10%;
     background-color: #fff;
     display: flex;
     flex-direction: column;
@@ -691,4 +691,7 @@ header{
             }
         }
     }
+}
+.r_footer{
+    margin: 0;
 }

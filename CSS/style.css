@@ -696,7 +696,7 @@ header ul a {
 }
 
 .recruit_info {
-  padding-top: 5%;
+  padding: 5% 0 10%;
   background-color: #fff;
   display: flex;
   flex-direction: column;
@@ -741,4 +741,8 @@ header ul a {
   color: #fff;
   font-weight: bold;
   font-size: 25px;
+}
+
+.r_footer {
+  margin: 0;
 }/*# sourceMappingURL=style.css.map */
