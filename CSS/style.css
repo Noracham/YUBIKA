@@ -22,6 +22,63 @@ a {
   text-decoration: none;
 }
 
+.rp_menu {
+  z-index: 99999;
+  display: none;
+  position: fixed;
+  right: 20px;
+  top: 20px;
+}
+@media screen and (max-width: 768px) {
+  .rp_menu {
+    display: block;
+  }
+}
+.rp_menu .active span {
+  transition: 0.5s;
+  width: 80%;
+}
+.rp_menu .active span:nth-of-type(1) {
+  right: 6px;
+  transform: rotate(-45deg) translateY(19.5px);
+}
+.rp_menu .active span:nth-of-type(2) {
+  opacity: 0;
+}
+.rp_menu .active span:nth-of-type(3) {
+  right: 6px;
+  transform: rotate(45deg) translateY(-19.5px);
+}
+.rp_menu .op_menu {
+  position: relative;
+  width: 40px;
+  height: 30px;
+}
+.rp_menu .op_menu span {
+  transition: 0.5s;
+  position: absolute;
+  display: inline-block;
+  width: 40px;
+  height: 3px;
+  background-color: #fff;
+}
+.rp_menu .op_menu span:nth-of-type(2) {
+  top: 12.5px;
+}
+.rp_menu .op_menu span:nth-of-type(3) {
+  top: 27px;
+}
+
+.menu_screen {
+  z-index: 99998;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background-color: #000;
+  transition: 0.5s;
+  right: -100vw;
+}
+
 header {
   position: absolute;
   width: 100%;
@@ -31,6 +88,7 @@ header {
 }
 @media screen and (max-width: 768px) {
   header {
+    background-color: rgba(0, 0, 0, 0);
     height: 70px;
   }
 }
@@ -71,11 +129,11 @@ header ul li a {
 }
 @media screen and (max-width: 768px) {
   header ul li:not(:nth-of-type(3)) {
-    opacity: 0;
+    display: none;
   }
 }
 header ul .title_logo {
-  width: 11%;
+  width: 13%;
 }
 @media screen and (max-width: 1024px) {
   header ul .title_logo {
@@ -757,7 +815,7 @@ header ul a {
   padding-bottom: 10%;
 }
 .recruit_info .works .work_one .one_info {
-  transition: 1s;
+  transition: 0.5s;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -770,7 +828,7 @@ header ul a {
 .recruit_info .works .work_one .one_info h2 {
   width: 100%;
   text-align: center;
-  transition: 1s;
+  transition: 0.5s;
   margin: 0;
   margin-bottom: 3%;
   font-family: paralucent, sans-serif;
@@ -785,7 +843,7 @@ header ul a {
 }
 .recruit_info .works .work_one .one_info p {
   width: 100%;
-  transition: 0.1s;
+  transition: 0.5s;
   text-align: center;
   margin: 0;
   color: #fff;
@@ -809,7 +867,17 @@ header ul a {
 
 .r_bg h1::after {
   content: "DRIVER";
-  left: 180px;
+  left: 210px;
+}
+
+.r3_bg h1::after {
+  content: "ADMIN";
+  left: 72px;
+}
+
+.c_bg h1::after {
+  content: "COMPANY";
+  left: 5px;
 }
 
 .r_info {
@@ -852,6 +920,7 @@ header ul a {
   margin-bottom: 10%;
   cursor: pointer;
   font-size: 20px;
+  color: #000;
 }
 
 .f_bg h1::after {

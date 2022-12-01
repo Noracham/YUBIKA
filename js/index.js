@@ -1,11 +1,11 @@
-// $(function(){
-//     // $(window).on("load",function(){
-//         if($(window).width() <= 768){
-    
-//             $("#change_a").before($("#change_b"));
-//         }
-//         else{
-//             $("#change_b").before($("#change_a"));
-//         }
-//     })
-// // })
+$(function(){
+    $(".op_menu").on("click",function(){
+       $(this).toggleClass("active");
+
+       if($(this).hasClass("active")){
+        $(".menu_screen").animate({right:"0"},500);
+    }else{
+        $(".menu_screen").animate({right:"-100vw"},500);
+    }
+    })
+})
