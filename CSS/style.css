@@ -1002,7 +1002,6 @@ header ul a {
 
 .f_bg h1::after {
   content: "CONTACT";
-  left: 60px;
 }
 
 .Form {
