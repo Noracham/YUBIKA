@@ -613,6 +613,9 @@ header ul a {
   }
 }
 .form_link .master .circle {
+  color: #000;
+  display: block;
+  position: relative;
   cursor: pointer;
   position: relative;
   font-size: 20px;
@@ -969,6 +972,7 @@ header ul a {
   background-size: cover;
   margin-bottom: 10%;
   transform: 0.5s;
+  box-shadow: 0 0 10px #666;
 }
 @media screen and (max-width: 1024px) {
   .recruit_info .works .work_one {
@@ -1078,13 +1082,18 @@ header ul a {
 }
 @media screen and (max-width: 768px) {
   .r_info {
-    padding: 20% 0;
+    padding: 30% 0;
   }
 }
 .r_info h1 {
   font-size: 45px;
   text-align: center;
   margin-bottom: 0;
+}
+@media screen and (max-width: 768px) {
+  .r_info h1 {
+    font-size: 30px;
+  }
 }
 .r_info table {
   margin: 8% 0;
@@ -1359,6 +1368,6 @@ header ul a {
     font-size: 16px;
   }
 }
-#job_list {
+.job_list {
   display: none;
 }/*# sourceMappingURL=style.css.map */

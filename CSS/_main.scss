@@ -320,6 +320,9 @@ header{
             align-items: center;
         }
         .circle{
+            color: #000;
+            display: block;
+            position: relative;
             cursor: pointer;
             position: relative;
             font-size: 20px;
@@ -333,6 +336,7 @@ header{
             align-items: center;
             text-align: center;
             transition: .5s;
+
             @include m.mq(sp){
                 width: 125px;
                 height: 125px;
@@ -681,6 +685,7 @@ header{
             background-size: cover;
             margin-bottom: 10%;
             transform: .5s;
+            box-shadow: 0 0 10px #666;
             @include m.mq(tab){
                 width: 80vw;
                 height: 30vw;
@@ -790,12 +795,15 @@ header{
     align-items: center;
     background-color: #fff;
     @include m.mq(sp){
-        padding: 20% 0;
+        padding: 30% 0;
     }
     h1{
         font-size: 45px;
         text-align: center;
         margin-bottom: 0;
+        @include m.mq(sp){
+            font-size: 30px;
+        }
     }
     table{
         margin: 8% 0;
@@ -1057,7 +1065,7 @@ header{
 	}
 }
 
-#job_list{
+.job_list{
     display: none;
 }
 
