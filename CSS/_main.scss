@@ -721,6 +721,9 @@ header{
                 height: 100%;
                 background-color: rgba(59, 59, 59, 0.593);
                 color: #fff;
+                @include m.mq(sp){
+                    width: 55%;
+                }
                 h2{
                     width: 100%;
                     text-align: center;
@@ -835,7 +838,9 @@ header{
         content: "CONTACT";
     }
 }
+
 .Form{
+    max-width: 98vw;
     overflow-x: hidden;
     margin: 0;
     padding: 10% 0;
@@ -1050,5 +1055,9 @@ header{
 		width: 160px;
 		font-size: 16px;
 	}
+}
+
+#job_list{
+    display: none;
 }
 

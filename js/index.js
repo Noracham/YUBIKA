@@ -9,4 +9,15 @@ $(function () {
     }
 
   });
+
+  $(".Form-Item-Job").change(function(){
+    const v = $("option:selected").val();
+    console.log(v);
+    if(v == "採用について"){   
+        $("#job_list").css("display","flex");
+    }else{
+        $("#job_list").css("display","none");
+
+    }
+  })
 });

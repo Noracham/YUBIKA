@@ -1012,6 +1012,11 @@ header ul a {
   background-color: rgba(59, 59, 59, 0.593);
   color: #fff;
 }
+@media screen and (max-width: 768px) {
+  .recruit_info .works .work_one .one_info {
+    width: 55%;
+  }
+}
 .recruit_info .works .work_one .one_info h2 {
   width: 100%;
   text-align: center;
@@ -1122,6 +1127,7 @@ header ul a {
 }
 
 .Form {
+  max-width: 98vw;
   overflow-x: hidden;
   margin: 0;
   padding: 10% 0;
@@ -1352,4 +1358,7 @@ header ul a {
     width: 160px;
     font-size: 16px;
   }
+}
+#job_list {
+  display: none;
 }/*# sourceMappingURL=style.css.map */

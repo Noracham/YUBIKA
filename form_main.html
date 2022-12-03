@@ -48,11 +48,26 @@
     </div>
 
     <section class="Form">
-      <link rel="stylesheet" href="style.css" />
       <div class="Inquiry">
         <div class="Form-Item">
           <p class="Form-Item-Label">
-            <span class="Form-Item-Label-Required">必須</span>希望職種
+            <span class="Form-Item-Label-Required">必須</span>お問い合わせ内容
+          </p>
+          <select class="Form-Item-Job">
+            <option value="">選択してください</option>
+            <option class="rec_nev" value="採用について">
+              採用について
+            </option>
+            <option value="お見積もりについて">
+              お見積もりについて
+            </option>
+            <option value="資料請求">資料請求</option>
+            <option value="その他">その他</option>
+          </select>
+        </div>
+        <div class="Form-Item" id="job_list">
+          <p class="Form-Item-Label">
+            <span class="Form-Item-Label-Required ">必須</span>希望職種
           </p>
           <select class="Form-Item-Job">
             <option value="">選択してください</option>
@@ -65,6 +80,7 @@
             <option value="事務系総合職">事務系総合職(中途)</option>
           </select>
         </div>
+
         <div class="Form-Item">
           <p class="Form-Item-Label">
             <span class="Form-Item-Label-Required">必須</span>お名前
@@ -100,29 +116,6 @@
           />
         </div>
         <div class="Form-Item">
-          <p class="Form-Item-Label-Fiddling">郵便番号</p>
-          <input
-            type="text"
-            class="Form-Item-Input-Post"
-            placeholder="例）123-4567"
-          />
-        </div>
-        <div class="Form-Item">
-          <p class="Form-Item-Label-Fiddling">ご住所</p>
-          <input
-            type="email"
-            class="Form-Item-Input"
-            placeholder="都道府県・市区町村"
-          />
-        </div>
-        <div class="Form-check">
-          <input
-            type="email"
-            class="Form-Item-Input"
-            placeholder="番地・建物名"
-          />
-        </div>
-        <div class="Form-Item">
           <p class="Form-Item-Label">
             <span class="Form-Item-Label-Required">必須</span>電話番号
           </p>
@@ -140,13 +133,6 @@
             type="email"
             class="Form-Item-Input"
             placeholder="例）example@denpa.jp"
-          />
-        </div>
-        <div class="Form-check">
-          <input
-            type="email"
-            class="Form-Item-Input"
-            placeholder="メールアドレス(確認)"
           />
         </div>
         <div class="Form-Item">
