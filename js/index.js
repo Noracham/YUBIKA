@@ -3,9 +3,10 @@ $(function () {
     $(this).toggleClass("active");
 
     if ($(this).hasClass("active")) {
-      $(".menu_screen").animate({ right: "0" }, 500);
+      $(".menu_screen").animate({ right: "0" }, "fast","linear");
     } else {
-      $(".menu_screen").animate({ right: "-100vw" }, 500);
+      $(".menu_screen").animate({ right: "-100vw" }, "fast","linear");
     }
+
   });
 });
