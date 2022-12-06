@@ -12,6 +12,11 @@ body {
   font-family: YuGothic, "Yu Gothic", sans-serif;
 }
 
+#sub_fadeIn {
+  display: none;
+  background: #000;
+}
+
 .hide {
   display: none;
 }
